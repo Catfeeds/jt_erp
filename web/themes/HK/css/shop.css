@@ -1,0 +1,588 @@
+body{
+	max-width: 640px;
+	margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+em, i{
+	font-style: normal;
+}
+/*.page-group{
+	z-index: 99999;
+}*/
+.page{
+	touch-action: none;
+}
+.swiper-container{
+	padding-bottom: 0;
+}
+.swiper-slide img{
+	width: 100%;
+}
+@-webkit-keyframes slideTop{
+	from {
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+	to {
+		-webkit-transform: translateY(100%);
+		transform: translateY(0);
+	}
+}
+@keyframes slideTop{
+	from {
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+	to {
+		-webkit-transform: translateY(100%);
+		transform: translateY(0);
+	}
+}
+.bar-tab{
+	height: 2.25rem;
+	transform: translateY(100%);
+	background-color: #ff5600;
+	-webkit-animation: slideTop .2s linear 1s;
+	animation: slideTop 0.2s linear 1s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+.bar-tab:before{
+	display: none;
+}
+.bar-tab .tab-item{
+	font-size: 0.7rem;
+	color: #fff;
+	font-family: 'Microsoft YaHei';
+	text-shadow: 0.05rem 0.05rem 0.05rem #333;
+	border-right: 0.05rem solid #f66;
+}
+.bar-tab .tab-item:last-child{
+	border-right: 0 none;
+}
+.details-form .main-bg{
+	padding: 0.5rem;
+}
+.details-form .main{
+	border-radius: 0.25rem;
+	background-color: #fafafa;
+	padding: 0.5rem;
+	box-shadow: 0 0.05rem 0.1rem 0.1rem #e4e4e4;
+}
+.details-form .main-box{
+	font-size: 0.7rem;
+	margin: 0.5rem 0;
+}
+.details-form .main-box .label{
+	height: 1.7rem;
+	line-height: 1.7rem;
+}
+.details-form .main-box .operation-box span{
+	line-height: 1rem;
+	border-radius: 0.25rem;
+	border: 0.1rem solid #ccc;
+	padding: 0.3rem 0.5rem;
+	margin: 0.25rem 0.5rem 0.25rem 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.details-form #colorBox .operation-box span, .details-form .operation-box span.color-image, .details-form #secondColorBox .operation-box span{
+	width: 31.333333%;
+	text-align: center;
+}
+.details-form #colorBox .operation-box span:nth-of-type(3n), .details-form .operation-box span.color-image:nth-of-type(3n){
+	margin: 0.25rem 0;
+}
+.details-form .main-box .operation-box span.active{
+	border: 0.1rem solid #f40;
+	color: #f40;
+}
+.details-form .main-box .operation-box span img{
+	width: 100%;
+}
+.details-form .main-box .number-box{
+	min-height: 1.7rem;
+}
+.details-form .main-box .number-box b{
+	padding: 0 0.5rem;
+	height: 1.3rem;
+	border: 0.05rem solid #ccc;
+}
+.details-form .main-box .number-box b:nth-of-type(1){
+	margin-right: 0.25rem;
+	line-height: 1.2rem;
+}
+.details-form .main-box .number-box b:nth-of-type(2){
+	margin-left: 0.25rem;
+	line-height: 1.1rem;
+}
+.details-form .main-box .number-box input{
+	font-size: 0.7rem;
+}
+.details-form .main-box input[type="text"], .details-form .main-box select{
+	height: 1.7rem;
+	line-height: 1.7rem;
+	border-radius: 0.15rem;
+	border: 0.05rem solid #ccc;
+	width: 94%;
+	padding: 0 2%;
+	font-size: 0.7rem;
+}
+.details-form .main-box .number-box input.num{
+	width: 2.5rem;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	border-width: 0.05rem 0;
+	border: 0.05rem solid #ccc;
+	padding: 0;
+	float: left;
+}
+.details-form .main-box .number-box strong{
+	height: 1.3rem;
+	line-height: 1.3rem;
+	font-size: 1rem;
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	color: #f40;
+	float: right;
+}
+.details-form .main-box textarea{
+	width: 96%;
+	padding: 1%;
+	height: 3rem;
+	border-radius: 0.15rem;
+	border: 0.05rem solid #ccc;
+	font-family: 'Microsoft YaHei';
+	font-size: 0.7rem;
+	resize: none;
+}
+.details-form .main-box .activity-title{
+	border: 0.1rem solid #f40;
+	color: #f40;
+	line-height: 1.7rem;
+	margin: 0.25rem 0.1rem;
+	border-radius: 0.15rem;
+	padding: 0 0.5rem 0 1.65rem;
+	display: inline-block;
+	position: relative;
+}
+.details-form .main-box .activity-title em{
+	width: 1.15rem;
+	height: 1.15rem;
+	background-image: url("../images/car_icon.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	display: block;
+	position: absolute;
+	left: 0.25rem;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.details-form .main-box .activity p{
+	padding: 0.15rem 0.25rem;
+	border-radius: 0.15rem;
+	margin: 0.5rem 0 0;
+	color: #f40;
+	border: 0.05rem solid #f40;
+	line-height: 1rem;
+}
+.details-form .submit-btn input[type="submit"], #cart-attr .details-form .submit-btn a{
+	width: 96%;
+	padding: 3% 0;
+	margin: 3% auto;
+	border: none;
+	color: #fff;
+	background-color: #e30;
+	font-size: 0.8rem;
+	height: auto;
+	font-family: 'Microsoft YaHei';
+	line-height: 1.14rem;
+	text-shadow: 0.05rem 0.05rem 0.05rem #333;
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 0.25rem;
+	text-overflow: ellipsis;
+	display: block;
+}
+.details-footer{
+	border-top: 0.05rem solid #ddd;
+	padding-top: 0.5rem;
+	text-align: center;
+	padding-bottom: 2.5rem;
+}
+.details-footer img{
+	width: 4.6rem;
+	height: auto;
+}
+.details-nav .tab-item span:nth-child(1){
+	width: 1.4rem;
+	height: 1.4rem;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+.details-nav .tab-item:nth-child(1) span:nth-child(1){
+	background-image: url("../images/buy.png");
+	top: -0.15rem;
+}
+.details-nav .tab-item:nth-child(2) span:nth-child(1){
+	top: -0.15rem;
+}
+.details-nav .tab-item span:nth-child(2){
+	padding-left: 0.25rem;
+}
+.detatwo-wrap{
+	font-family: Arial,sans-serif !important;
+	background-color: #fff;
+	font-size: 0.6rem;
+}
+.detatwo .title{
+	font-size: 0.7rem;
+	background-color: #000;
+	color: #fff;
+	padding: 0 3%;
+	font-weight: bold;
+	position: static;
+	margin: 0;
+	line-height: 1.75rem;
+}
+.detatwo-banner{
+	/*height: 18.75rem;*/
+}
+.detatwo-banner .page-num{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	text-align: center;
+	font-size: 0.6rem;
+}
+.detatwo-price .price-context{
+	position: relative;
+	padding: 0.5rem 0.1rem;
+	font-size: 0.7rem;
+	border-bottom: 0.05rem dashed #dcdcdc;
+}
+.detatwo-price .price-context .dc-price{
+	float: left;
+	padding-top: 0.15rem;
+}
+.detatwo-price .price-context .dc-price span{
+	font-size: 1.2rem;
+	float: left;
+	font-weight: bold;
+	color: red;
+}
+.detatwo-price .price-context .dc-price .o-price{
+	float: left;
+	padding: 0 0.3rem;
+	text-decoration: line-through;
+	color: #555;
+	font-size: 0.6rem;
+}
+.detatwo-price .price-context .flag{
+	background-color: #339966;
+	padding: 0.1rem 0.2rem;
+	color: #fff;
+	line-height: 0.9rem;
+	margin-left: 0.1rem;
+	border-radius: 0.15rem;
+	float: left;
+	font-size: 0.6rem;
+}
+.detatwo-day{
+	padding: 0.4rem 0;
+	border-bottom: 0.05rem dashed #dcdcdc;
+}
+.detatwo-day .label{
+	font-size: 0.7rem;
+	color: #333;
+	line-height: 1.15rem;
+	padding: 0.1rem 0 0.1rem 2.1rem;
+	position: relative;
+}
+.detatwo-day .label:before{
+	width: 1.9rem;
+	height: 1.9rem;
+	content: "";
+	background-image: url("../images/detatwo_icon1.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0.1rem;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.detatwo-day .time-wrap{
+	color: #666;
+	float: right;
+	margin: 0.05rem 0.2rem;
+	font-size: 0.7rem;
+}
+.detatwo-day .timer span{
+	padding: 0.1rem 0.15rem;
+	background-color: #000;
+	color: #fff;
+	border-radius: 0.1rem;
+	margin: 0 0.1rem;
+	font-size: 0.8rem;
+}
+.detatwo-number{
+	border-bottom: 0.05rem dashed #dcdcdc;
+	padding: 0.35rem 0.25rem;
+	height: 1.8rem;
+}
+.detatwo-number > span{
+	float: left;
+}
+.detatwo-number > span:nth-of-type(2){
+	width: 6rem;
+	height: 0.25rem;
+	border: 0.05rem solid #339966;
+	margin: 0.35rem;
+}
+.detatwo-number > span:nth-of-type(2) span{
+	width: 89%;
+	height: 0.2rem;
+	background-color: #339966;
+	display: block;
+}
+.detatwo-profile{
+	padding: 0.5rem 0.25rem;
+	color: #339966;
+	min-height: 1.5rem;
+}
+.detatwo-profile p{
+	margin: 0;
+}
+.detatwo-bars{
+	background-color: #fff;
+	height: 2rem;
+	width: 100%;
+	max-width: 640px;
+	border: 0.05rem solid #ddd;
+	list-style: none;
+}
+.detatwo-bars.fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.detatwo-bars li{
+	width: 33.33%;
+	line-height: 1.9rem;
+	border-right: 0.05rem solid #ddd;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+}
+.detatwo-bars li:last-child{
+	border-right: 0;
+}
+.detatwo-product-info p{
+	margin: 0;
+}
+.detatwo-product-info img{
+	width: 100%;
+	vertical-align: top;
+}
+.detatwo-page-order .order-title{
+	padding: 0 2%;
+	background-color: #666;
+}
+.detatwo-page-order .order-title h1{
+	color: #fff;
+	padding-left: 1.6rem;
+	line-height: 2.2rem;
+	font-size: 1rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0;
+	position: relative;
+}
+.detatwo-page-order .order-title h1:before{
+	width: 1.15rem;
+	height: 1rem;
+	content: "";
+	background-image: url("../images/detatwo_icon1.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.detatwo-page-order .order-list-box{
+	padding: 0.4rem;
+}
+.detatwo-page-order .order-list{
+	height: 12.5rem;
+	overflow: hidden;
+}
+.detatwo-page-order .order-list ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.detatwo-page-order li{
+	border-bottom: 0.05rem dotted #aaa;
+	padding: 0.1rem;
+	line-height: 1.05rem;
+	font-size: 0.7rem;
+}
+.detatwo-recommend-products{
+	padding: 0.5rem;
+}
+.detatwo-recommend-products h3{
+	margin: 0 0 0.5rem;
+}
+.detatwo-recommend-products dl{
+	padding-bottom: 0.6rem;
+	border-bottom: 0.05rem solid #ccc;
+}
+.detatwo-recommend-products dt{
+	width: 40%;
+	float: left;
+}
+.detatwo-recommend-products dt img{
+	width: 100%;
+}
+.detatwo-recommend-products dd{
+	width: 60%;
+	float: left;
+	margin: 0;
+	padding-left: 0.5rem;
+}
+.detatwo-recommend-products h5{
+	font-size: 0.75rem;
+	line-height: 1.2rem;
+	color: #111;
+	font-weight: 700;
+	word-break: break-all;
+	margin: 0;
+}
+.detatwo-recommend-products .price{
+	text-align: right;
+	font-size: 0.8rem;
+	color: #b12704;
+}
+.detatwo-recommend-products .buy-now{
+	color: #fff;
+	padding: 0.25rem;
+	display: block;
+	width: 96%;
+	background-color: #339966;
+	text-align: center;
+	border-radius: 0.2rem;
+	margin: 2%;
+}
+/*=== 跑马灯 ===*/
+.details-reviews{
+	margin-top: 0.95rem;
+}
+.details-bwtitle{
+	height: 2.25rem;
+	line-height: 2.25rem;
+	font-size: 0.8rem;
+	background-color: #ff5600;
+	font-weight: bold;
+	color: #fff;
+	padding-left: 0.5rem;
+	text-shadow: 0.05rem 0.05rem 0.05rem #333;
+}
+.details-reviews .list-block{
+	max-height: 15rem;
+	width: 96%;
+	overflow: hidden;
+	margin: 0.5rem auto;
+	color: #666;
+	font-size: 0.6rem;
+}
+.details-reviews .list-block ul{
+	line-height: 0.8rem;
+	position: relative;
+	-moz-user-select: none;
+	khtml-user-select: none;
+	user-select: none;
+	background-color: #f6f6f6;
+}
+.details-reviews .list-block ul:before, .details-reviews .list-block ul:after{
+	display: none;
+}
+.details-reviews .list-block li{
+	border-bottom: 0.05rem solid #ccc;
+	padding: 0.25rem 0;
+}
+.details-reviews .list-block p{
+	margin: 0;
+	line-height: 1rem;
+	color: #333;
+}
+.details-reviews .list-block .information{
+	margin-top: 0.25rem;
+}
+/*=== 第二件半价 ===*/
+.details-second-price-btn{
+	text-align: center;
+	background-color: #f40;
+	color: #fff;
+	margin: 0 1rem;
+	line-height: 2rem;
+	border-radius: 0.25rem;
+	display: none;
+}
+.details-second-price{
+	display: none;
+}
+/*=== 用户须知 ===*/
+.details-knowledge ul, .details-knowledge li{
+	list-style: none;
+}
+.details-knowledge ul {
+	padding: 0 0 0.75rem 0;
+	margin: 0;
+}
+.details-knowledge li {
+	padding-left: 0.5rem;
+	margin: 0.5rem 0 0;	
+}
+.details-knowledge li h3 {
+	font-size: 0.8rem;
+	margin: 0;
+	color: #f00;
+}
+.details-knowledge li p {
+	margin: 0;
+}
+.details-knowledge li p:nth-of-type(1) {
+	margin: 0.5rem 0 0;
+}
+.details-knowledge li p.red {
+	color: #f00;
+}
+
+@media screen and (min-width: 641px) {
+	.detatwo-bars.fixed{
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+}

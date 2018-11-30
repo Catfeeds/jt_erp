@@ -1,0 +1,15 @@
+﻿Price   ราคา
+
+Discount    ส่วนลด
+
+save   ประหยัด
+
+Time limited  จำกัดเวลาซื้อ
+
+Free shipment จัดส่งฟรี
+
+Cash on delivery  เก็บเงินปลายทาง
+
+No reason return/change in 7 days  สามารถเปลี่ยน / คืนสินค้าได้ภายใน 7 วัน
+
+*****People placed orders   ลูกค้าสั่งซื้อเรียบร้อย

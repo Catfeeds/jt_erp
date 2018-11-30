@@ -1,0 +1,7 @@
+#修改websites表增加SPU 2018-6-30 14:33
+ALTER TABLE websites ADD COLUMN spu CHAR(8) NOT NULL COMMENT 'SPU';
+ALTER TABLE shiping_area ADD COLUMN country char(2) NOT NULL COMMENT '国家';
+ALTER TABLE websites_group ADD COLUMN website_ids VARCHAR(255) NOT NULL COMMENT '套餐产品ID, 逗号分开';
+
+ALTER TABLE `user` ADD COLUMN `name` VARCHAR(50) DEFAULT '' COMMENT '姓名';
+ALTER TABLE `user` ADD COLUMN leader TINYINT(2) DEFAULT 0 COMMENT '级别 0普通 1组长 2经理';
